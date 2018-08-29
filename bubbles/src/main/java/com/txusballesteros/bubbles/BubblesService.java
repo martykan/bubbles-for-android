@@ -28,6 +28,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
+import android.os.Build;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
