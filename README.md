@@ -3,22 +3,37 @@ Bubbles for Android
 
 Bubbles for Android is an Android library to provide chat heads capabilities on your apps. With a fast way to integrate with your development.
 
+## Note
+This is a fork of the original version that fixes support for Android Oreo and higher, by using the TYPE_APPLICATION_OVERLAY window parameter. For this to work, you will also need to make sure the "Draw over other apps" permission is granted.
+
 ![Logo](assets/bubbles_demo.gif)
 
 ## Latest Version
 
-[![Download](https://api.bintray.com/packages/txusballesteros/maven/bubbles-for-android/images/download.svg) ](https://bintray.com/txusballesteros/maven/bubbles-for-android/_latestVersion) ![](https://img.shields.io/badge/platform-android-green.svg) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Bubbles%20for%20Android-green.svg?style=flat)](https://android-arsenal.com/details/1/2113)
+[![](https://jitpack.io/v/martykan/bubbles-for-android.svg)](https://jitpack.io/#martykan/bubbles-for-android)
+ ![](https://img.shields.io/badge/platform-android-green.svg)
 
 ## How to use
 
 ### Configuring your project dependencies
 
+First, add the Jitpack repository to your top-level build.gradle file.
+
+```groovy
+allprojects {
+    repositories {
+        // ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
 Add the library dependency in your build.gradle file.
 
 ```groovy
 dependencies {
-    ...
-    compile 'com.txusballesteros:bubbles:1.2.1'
+    // ...
+    implementation 'com.github.martykan:bubbles-for-android:1.2.2'
 }
 ```
 
